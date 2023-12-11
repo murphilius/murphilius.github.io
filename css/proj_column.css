@@ -1,0 +1,178 @@
+/* article {
+    columns: 350px 2;
+    column-gap: 20px;
+    column-rule: 5px rgb(231, 231, 231);
+ }
+ 
+
+ }
+ 
+ article > p {
+    widows: 3;
+    orphans: 3;
+ } */
+
+
+.container {
+   display: flex;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+
+/* Style for the first column */
+.column1 {
+   flex: 1;
+   /* Adjust the width of the first column */
+   padding: 20px;
+}
+
+.column1 h1 {
+   text-align: center;
+   font-size: 1.5em;
+   letter-spacing: 0.15em;
+   column-span: all;
+}
+.column1a {
+   flex: 1;
+   /* Adjust the width of the first column */
+   padding: 20px;
+}
+
+.column1a h1 {
+   text-align: center;
+   font-size: 1.5em;
+   letter-spacing: 0.15em;
+   column-span: all;
+}
+
+/* Style for the second column */
+.column2 {
+   flex: 1;
+   /* Adjust the width of the second column */
+   padding: 69px;
+}
+
+.column2a ul,
+.column2a li {
+   margin-bottom: 10px; /* Adjust the value as needed for your desired spacing */
+}
+
+.image-container {
+   display: flex;
+   width: auto;
+   height: auto;
+}
+.jpgcolumn1 {
+   flex: 1;
+   padding: 20px;
+   float: left;
+}
+
+.jpgcolumn1 img {
+   /* max-height: 200px; Adjust this value as needed */
+   width: auto;
+   height: 300px;
+   padding-bottom: 20px;
+}
+
+.jpgcolumn1a {
+   flex: 1;
+   padding: 20px;
+   float: left;
+}
+
+.jpgcolumn1a img {
+   /* max-height: 200px; Adjust this value as needed */
+   width: auto;
+   height: 300px;
+   padding-bottom: 20px;
+   margin-left: 20px;
+}
+
+.bed {
+   flex: 1;
+   padding: 20px;
+   float: left;
+}
+
+.bed img {
+
+}
+
+.jpgcolumn2 img {
+   width: 533.33px;
+   height: 300px;
+}
+
+.jpgcolumn2a img {
+   width: auto;
+   height: 626px;
+
+   /*pg 2*/
+}
+
+.jpgcolumn2a {
+   flex: 1;
+   padding: 5px 0 0 0;
+   float: right;
+}
+
+.jpgcolumn2 {
+   flex: 1;
+   padding: 20px;
+   float: right;
+}
+
+.bottomtextpadding {
+   padding-bottom: 30px;
+}
+
+/* this project is a fucking headache */
+@media (max-aspect-ratio:1/1) {
+   
+.jpgcolumn2 img {
+   width: 533.33px;
+   height: 300px;
+}
+
+.jpgcolumn2a img {
+   width: auto;
+   height: 626px;
+
+   /*pg 2*/
+}
+
+.jpgcolumn2a {
+   flex: 1;
+   padding: 5px 0 0 0;
+   float: none;
+}
+
+.jpgcolumn2 {
+   flex: 1;
+   padding: 20px;
+   float: none;
+}
+
+.jpgcolumn1 {
+   flex: 1;
+   padding: 20px;
+   float: none;
+}
+
+.jpgcolumn1 img {
+   /* max-height: 200px; Adjust this value as needed */
+   width: auto;
+   height: 300px;
+   padding-bottom: 20px;
+}
+
+.jpgcolumn1a {
+   flex: 1;
+   padding: 20px;
+   float: none;
+}
+
+}
